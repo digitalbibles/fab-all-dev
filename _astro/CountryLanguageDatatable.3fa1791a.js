@@ -1,0 +1,8 @@
+import{S as _,i as v,s as b,e as p,c as y,b as x,d as C,j as k,g as m,k as G,m as N,p as j,r as D,u as F,v as I}from"./index.a336dc1c.js";import{G as S,d as u,c as d,e as f,a as g}from"./l10n.module.76241590.js";function V(s){let t,a,o;return a=new S({props:{columns:s[2],data:s[1],sort:!0,search:!0,pagination:{enabled:!0,limit:14},language:{ar:u,cn:d,en:{},es:f}[s[0]]}}),{c(){t=p("div"),y(a.$$.fragment),this.h()},l(e){t=x(e,"DIV",{class:!0});var n=C(t);k(a.$$.fragment,n),n.forEach(m),this.h()},h(){G(t,"class","flex flex-row")},m(e,n){N(e,t,n),j(a,t,null),o=!0},p(e,[n]){const i={};n&4&&(i.columns=e[2]),n&2&&(i.data=e[1]),n&1&&(i.language={ar:u,cn:d,en:{},es:f}[e[0]]),a.$set(i)},i(e){o||(D(a.$$.fragment,e),o=!0)},o(e){F(a.$$.fragment,e),o=!1},d(e){e&&m(t),I(a)}}}function q(s,t,a){let o,e,{t:n={}}=t,{data:i}=t,{locale:l}=t;const h=new Intl.NumberFormat(l);return s.$$set=r=>{"t"in r&&a(3,n=r.t),"data"in r&&a(4,i=r.data),"locale"in r&&a(0,l=r.locale)},s.$$.update=()=>{s.$$.dirty&9&&a(2,o=[{id:"tt",name:"Name",formatter:(r,c)=>g(`<a class="hover:underline" href="/${l}/languages/${c.cells[2].data}">
+		  		<div class="font-medium text-gray-900 dark:text-stone-200">
+					${c.cells[0].data??""}
+				</div>
+				<div class="text-gray-500 dark:text-stone-300">
+					${c.cells[1].data??""}
+				</div>
+			</a>`)},{id:"tv",name:"Vernacular Name",hidden:!0},{id:"id",name:"iso"},{id:"po",name:n.population??"Population",formatter:r=>g(r?h.format(r):"-")},{id:"bc",name:"Bibles Count"},{id:"rc",name:"Resources Count"}]),s.$$.dirty&16&&a(1,e=i)},[l,e,o,n,i]}class E extends _{constructor(t){super(),v(this,t,q,V,b,{t:3,data:4,locale:0})}}export{E as default};
